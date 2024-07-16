@@ -3,7 +3,11 @@ from tensorflow import keras
 import streamlit as st
 import numpy as np
 import os
+import sys
+import path
 
+dir = path.Path(__file__).abspath()
+sys.append.path(dir.parent.parent)
 
 glob_input_kelas = ["BrownSpot", "Healthy", "Hispa", "LeafBlast"]
 path_model = os.path.join("./models", "model_EfficientNetB3-FTAll_fold_3.h5")
