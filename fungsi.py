@@ -6,7 +6,7 @@ import os
 
 
 glob_input_kelas = ["BrownSpot", "Healthy", "Hispa", "LeafBlast"]
-path_model = os.path.join("../models", "model_EfficientNetB3-FTAll_fold_3.h5")
+path_model = os.path.join("./models", "model_EfficientNetB3-FTAll_fold_3.h5")
 model = keras.models.load_model(path_model)
 
 
